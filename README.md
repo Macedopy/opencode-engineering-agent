@@ -9,26 +9,7 @@ for domain context (contracts and business rules).
 
 ## Architecture
 
-```text
-                       ┌──────────────┐
-        user request → │ Orchestrator │  (primary, never edits files)
-                       └──────┬───────┘
-                              │ subagent tool
-        ┌────────────┬────────┴────────┬─────────────┐
-        ▼            ▼                 ▼             ▼
-   ┌─────────┐  ┌─────────┐      ┌─────────┐   ┌───────────┐
-   │Researcher│ │ Planner │      │  Coder  │   │ Reviewer  │
-   │ (read)   │→ │ (read)  │  →   │ (write) │ → │ (read)    │
-   └────┬─────┘  └────┬────┘      └────┬────┘   └─────┬─────┘
-        │             │                │              │
-        └─────────────┴────────────────┴──────────────┘
-                              │
-                    ┌─────────▼─────────┐
-                    │  Obsidian vault   │
-                    │  (Markdown +      │
-                    │   wikilinks)      │
-                    └───────────────────┘
-```
+<img width="758" height="763" alt="OpenCode Custom agent drawio" src="https://github.com/user-attachments/assets/3170321d-a2b7-49d5-adf2-bd51c2ae0be4" />
 
 | Agent | Mode | Can edit? | Responsibility |
 | --- | --- | --- | --- |
