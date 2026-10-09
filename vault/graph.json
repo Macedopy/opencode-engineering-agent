@@ -1,0 +1,104 @@
+{
+  "nodes": [
+    "API Contract",
+    "Business Rules",
+    "Coder",
+    "Graph View",
+    "Orchestrator",
+    "Planner",
+    "Researcher",
+    "Reviewer",
+    "Vault Graph Agent",
+    "Wikilinks"
+  ],
+  "edges": [
+    {
+      "from": "API Contract",
+      "to": "Business Rules"
+    },
+    {
+      "from": "Business Rules",
+      "to": "API Contract"
+    },
+    {
+      "from": "Coder",
+      "to": "Planner"
+    },
+    {
+      "from": "Coder",
+      "to": "Business Rules"
+    },
+    {
+      "from": "Coder",
+      "to": "API Contract"
+    },
+    {
+      "from": "Coder",
+      "to": "Orchestrator"
+    },
+    {
+      "from": "Graph View",
+      "to": "Wikilinks"
+    },
+    {
+      "from": "Orchestrator",
+      "to": "Researcher"
+    },
+    {
+      "from": "Orchestrator",
+      "to": "Planner"
+    },
+    {
+      "from": "Orchestrator",
+      "to": "Coder"
+    },
+    {
+      "from": "Orchestrator",
+      "to": "Reviewer"
+    },
+    {
+      "from": "Planner",
+      "to": "Business Rules"
+    },
+    {
+      "from": "Planner",
+      "to": "Orchestrator"
+    },
+    {
+      "from": "Researcher",
+      "to": "Wikilinks"
+    },
+    {
+      "from": "Researcher",
+      "to": "Orchestrator"
+    },
+    {
+      "from": "Reviewer",
+      "to": "Coder"
+    },
+    {
+      "from": "Reviewer",
+      "to": "Business Rules"
+    },
+    {
+      "from": "Reviewer",
+      "to": "Orchestrator"
+    },
+    {
+      "from": "Vault Graph Agent",
+      "to": "Wikilinks"
+    },
+    {
+      "from": "Vault Graph Agent",
+      "to": "Orchestrator"
+    },
+    {
+      "from": "Wikilinks",
+      "to": "Graph View"
+    },
+    {
+      "from": "Wikilinks",
+      "to": "Vault Graph Agent"
+    }
+  ]
+}

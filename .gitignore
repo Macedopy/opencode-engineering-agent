@@ -1,0 +1,10 @@
+# Obsidian local state — per-machine settings, not part of the project
+.obsidian/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.log
+
+# Node
+node_modules/
